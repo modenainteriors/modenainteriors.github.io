@@ -1,4 +1,4 @@
 modenainteriors.github.io
 =========================
 
-Website for Modena Interiors <modena-interiors.com>.
+Website for Modena Interiors \<modena-interiors.com\>.
