@@ -1,6 +1,6 @@
 name: "Modena Interiors"
 description: "Interior Refurbishment Solutions"
-exclude: [Gemfile, Gemfile.lock, Gemfile.lock]
+exclude: ["Gemfile", "Gemfile.lock", "Gemfile.lock", "assets", "README.md"]
 timezone: Europe/London
 
 sass:
