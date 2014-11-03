@@ -2,3 +2,5 @@
 .run-dev-server
 .update-jekyll
 .to-do_doing_done
+_site/
+_layouts/_site/
