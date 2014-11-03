@@ -3,6 +3,9 @@ description: "Interior Refurbishment Solutions"
 exclude: [Gemfile, Gemfile.lock, Gemfile.lock]
 timezone: Europe/London
 
+sass:
+  sass_dir: _sass
+
 contact_number: "0772 8032 929"
 
 defaults:
