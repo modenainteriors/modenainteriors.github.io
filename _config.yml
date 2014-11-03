@@ -1,6 +1,6 @@
 name: "Modena Interiors"
 description: "Interior Refurbishment Solutions"
-exclude: [Gemfile, Gemfile.lock]
+exclude: [Gemfile, Gemfile.lock, Gemfile.lock]
 timezone: Europe/London
 
 contact_number: "0772 8032 929"
