@@ -1,5 +1,11 @@
-<header>
-<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" alt="{{ site.name  }}"></a>
-<div>{{ site.contact_number  }}</div>
+<header class="container-fluid" itemscope itemtype="http://schema.org/Organization">
+  <div class="row row-spacer-2">
+    <a class="col-sm-offset-1 col-sm-7 col-xs-offset-1 col-xs-11" itemprop="url" title="Return to the Modena Interiors homepage" href="{{ site.baseurl }}/">
+      <img class="header-logo" itemprop="logo" src="{{ site.baseurl }}/img/logo.png" alt="{{ site.name  }}">
+    </a>
+
+    <div itemprop="telephone" class="col-sm-3 col-xs-11 header-contact-number">{{ site.contact_number  }}</div>
+
+  </div><!--end row-->
 </header>
 
