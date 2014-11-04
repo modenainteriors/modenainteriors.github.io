@@ -1,3 +1,20 @@
-// Colour Scheme
+// Site wide colour scheme
 $brand-primary:     #368c8c;
-$text-color-light:  #ffffff;
+$text-color-light:  #ffffe4;
+$dark-background:   #1c1c1c;
+$white: #ffffff;
+
+// Nav bar 
+$navbar-default-bg:                 $brand-primary;
+$navbar-default-link-color:         $text-color-light;
+$navbar-default-link-hover-color:   $text-color-light; 
+$navbar-default-link-active-color:  $text-color-light;
+$navbar-default-link-active-bg:     $dark-background;
+$navbar-default-link-hover-bg:      $dark-background;
+$link-border-color:                 $white;
+
+$navbar-border-radius: 0px;
+$navbar-margin-bottom: 0px;
+
+
+

@@ -1,6 +1,14 @@
 header {
-  background-color: #1c1c1c;
+  background-color: $dark-background;
   color: $text-color-light;
+  border-bottom: 1px solid $gray-lighter;
+
+  a {
+    &:hover, &:focus {
+      text-decoration: none;
+      color: $brand-primary;
+    }
+  }
 
   .header-logo {
     text-transform: uppercase;
