@@ -1,3 +1,13 @@
+.header-spacer {
+  margin-top: $block-spacer * 3;
+  margin-bottom: $block-spacer * 2;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: $block-spacer * 4;
+    margin-bottom: $block-spacer * 4;
+  }
+}
+
 header {
   background-color: $dark-background;
   color: $text-color-light;
@@ -19,13 +29,24 @@ header {
 
   .header-contact-number {
     text-align: right;
-    font-size: $font-size-h1;
+    font-size: $font-size-h3;
     height: 55px;
     line-height: 55px;
+    margin-top: $block-spacer;
+    
+    @media (min-width: $screen-sm-min) {
+      font-size: $font-size-h1;
+      margin-top: 0;
+    }
 
     .phone-image {
-      height: 45px;
+      height: 36px;
       margin-right: 10px;
+
+      @media (min-width: $screen-sm-min) {
+        height: 45px;
+      }
+
     }
   }
 }
