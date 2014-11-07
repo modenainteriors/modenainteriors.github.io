@@ -1,4 +1,5 @@
 *.swp
+*.swo
 .run-dev-server
 .update-jekyll
 .to-do_doing_done
