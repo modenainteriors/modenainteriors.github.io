@@ -33,6 +33,7 @@ header {
     height: 55px;
     line-height: 55px;
     margin-top: $block-spacer;
+    white-space: nowrap;
     
     @media (min-width: $screen-sm-min) {
       font-size: $font-size-h1;
