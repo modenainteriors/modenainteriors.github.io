@@ -5,11 +5,28 @@ main {
 }
 
 .services-list {
+  ul {
+    // services list custom grid
+    .col-xss-12 {
+      width: 100%;
+    }
+    @media( min-width: 420px ) {
+      .col-xs-6 {
+        width: 50%;
+      }  
+    }
+
+    @media( min-width: 800px ) {
+      .col-sm-4 {
+        width: 33.3333%;
+      }  
+    }
+    // end services list
+  }
+
   background-color: $dirty-white;
 
-  .col-xss-12 {
-    width: 100%; 
-  }
+  
 
 
   li {
