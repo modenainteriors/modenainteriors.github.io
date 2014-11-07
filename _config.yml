@@ -2,6 +2,7 @@ name: "Modena Interiors"
 description: "Interior Refurbishment Solutions"
 exclude: ["Gemfile", "Gemfile.lock", "Gemfile.lock", "README.md", "assets/fonts", "assets/javascripts/bootstrap/"]
 timezone: Europe/London
+hostname: "modena-interiors.com"
 
 baseurl: ""
 
