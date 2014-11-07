@@ -7,10 +7,16 @@ main {
 .services-list {
   background-color: $dirty-white;
 
+  .col-xss-12 {
+    width: 100%; 
+  }
+
+
   li {
     display: block;
     padding: 8px;
     position: relative;
+    
 
     @media (min-width: $screen-sm-min) {
       padding: 10px;
@@ -31,14 +37,19 @@ main {
 
     div {
       background-color: $dark-background;
-      font-size: $font-size-h5;
+      font-size: $font-size-h6;
 //    font-weight: bold;
       padding: 10px;
       padding-top: ceil(( $font-size-h3 * $headings-line-height));      
       padding-bottom: ceil(( $font-size-h3 * $headings-line-height));      
       position: relative;
+      white-space: nowrap;
 
       @media (min-width: $screen-sm-min) {
+        font-size: $font-size-h5;
+      }
+
+      @media (min-width: $screen-md-min) {
         font-size: $font-size-h4;
       }
 
