@@ -1,0 +1,53 @@
+.contact-page {
+  padding-top: ($block-spacer * 5);
+  padding-bottom: ($block-spacer * 5);
+
+
+  h2 {
+    color: $dirty-white;
+  }
+
+
+.modena-address {
+  p {
+    margin-bottom: 23px;
+    white-space: nowrap;
+  }  
+}
+
+}
+
+.modena-contact-form {
+  .form-group {
+    overflow: auto;
+    //margin-bottom: 20px;
+  }
+
+  label {
+    color: $brand-primary;
+      @media (min-width: $screen-sm-min) {
+       text-align: right;
+      }
+    }
+
+  input, textarea {
+    background-color: $dirty-white;
+    border: none;
+    color: $dark-background;
+    padding: 3px 6px;
+  }
+
+  textarea {
+    resize: none;
+  }
+  
+  .submit {
+    margin-top: 2px;
+    background-color: $brand-primary;
+    color: $dirty-white;
+    padding: 3px 0;
+    &:hover {
+      background-color: #6AA121;
+    }
+  }
+}

@@ -1,42 +1,52 @@
 ---
-layout: default
+layout: contact
 ---
 
-<main class="container-fluid">
-  <div class="col-md-offset-2 col-md-8 col-xs-10 col-col-xs-offset-1">
-    <div class="col-xs-12 col-sm-6">
-      <h1>Contact Us</h1>
-      <h2>Modena Interiors</h2>
-      <p>
-        18 Wates Way,<br>
-        Surrey,<br>
-        United Kingdom,<br>
-        CR4 4HR
-      </p>
-      <p>
-        <b>Telephone:</b> 0208 646 1266
-      </p>
-      <p>
-        <b>Email:</b> info@modena-interiors.com
-      </p>
+<main class="container-fluid contact-page">
+  <div class="col-md-offset-2 col-md-8 col-xs-10 col-xs-offset-1">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 modena-address">
+        <h1>Contact Us</h1>
+        <h2>Modena Interiors</h2>
+        <p>
+          18 Wates Way,<br>
+          Surrey,<br>
+          United Kingdom,<br>
+          CR4 4HR
+        </p>
+        <p>
+          <b>Telephone:</b> 0208 646 1266
+        </p>
+        <p>
+          <b>Email:</b> info@modena-interiors.com
+        </p>
+      </div><!-- end column -->
+      <div class="col-xs-12 col-sm-7">
+        <form class="block-spacer-25-top modena-contact-form" action="http://getsimpleform.com/messages?form_api_token=cfed40742163af01eade938cf784fca4" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='{{ base.url }}/contact/thanks.html' />
+          <!-- all your input fields here.... -->
+          <div class="form-group">
+            <label class="col-xs-12 col-sm-4">Name:</label>
+            <input class="col-xs-12 col-sm-8" type='text' name='name' />
+          </div>
+          <div class="form-group">
+            <label class="col-xs-12 col-sm-4">Email:</label>
+            <input class="col-xs-12 col-sm-8" type='text' name='email' />
+          </div>
+          <div class="form-group">
+            <label class="col-xs-12 col-sm-4">Telephone:</label>
+            <input class="col-xs-12 col-sm-8"type='text' name='telephone' />
+          </div>
+          <div class="form-group">
+            <label class="col-xs-12 col-sm-4">Enquiry:</label>
+            <textarea rows="4" class="col-xs-12 col-sm-8" name="message"></textarea>
+            <input class="col-xs-12 col-sm-offset-4 col-sm-8 submit" type='submit' value='Send' />
+          </div>
+        </form>
+      </div><!-- end column -->
     </div><!-- end column -->
-    <div class="col-xs-12 col-sm-6">
-      <form action="http://getsimpleform.com/messages?form_api_token=cfed40742163af01eade938cf784fca4" method="post">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
-        <!-- all your input fields here.... -->
-        <label class="col-xs-4">Name:</label>
-        <input class="col-xs-offset-1 col-xs-7" type='text' name='name' />
-        <label class="col-xs-4">Email:</label>
-        <input class="col-xs-offset-1 col-xs-7" type='text' name='email' />
-        <label class="col-xs-4">Telephone:</label>
-        <input class="col-xs-offset-1 col-xs-7"type='text' name='telephone' />
-        <label class="col-xs-4">Enquiry:</label>
-        <textarea class="col-xs-offset-1 col-xs-7" name="message"></textarea>
-        <input class="col-xs-offset-5 col-xs-7" type='submit' value='Send' />
-      </form>
-    </div><!-- end column -->
-    </div>
+  </div>
 </main>
 <section class="services-list container-fluid">
 </section>
