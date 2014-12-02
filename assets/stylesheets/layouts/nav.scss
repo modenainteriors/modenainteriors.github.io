@@ -109,7 +109,7 @@
       width: 20%;
       margin-bottom: -2px;
       &:first-child > a {
-        border-left: 1px solid $link-border-color;
+        border-left: 1px solid $link-border-color !important;
       }
 
     }
