@@ -55,10 +55,7 @@ main {
     div {
       background-color: $dark-background;
       font-size: $font-size-h6;
-//    font-weight: bold;
-      padding: 10px;
-      padding-top: ceil(( $font-size-h3 * $headings-line-height));      
-      padding-bottom: ceil(( $font-size-h3 * $headings-line-height));      
+      padding: 15px 10px;
       position: relative;
       white-space: nowrap;
 
@@ -78,13 +75,13 @@ main {
         width: 0px;
         height: 0px;
         position: absolute;
-        top: -32px;
-	      border-left: 32px solid transparent;
-	      border-right: 32px solid transparent;
-	      border-bottom: 32px solid $dark-background;
+        top: -25px;
+	      border-left: 25px solid transparent;
+	      border-right: 25px solid transparent;
+	      border-bottom: 25px solid $dark-background;
         left: 50%;
-        margin-left: -32px;
-    }
+        margin-left: -25px;
+      }
     }
 
  }
