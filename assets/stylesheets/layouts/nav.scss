@@ -98,13 +98,16 @@
   > li {
     float: left;
     // Make the list-items overlay the bottom border
-    margin-bottom: -2px;
     width: 100%;
     text-align: center;
+    &:first-child > a {
+      box-shadow: none;
+      border-top: 1px solid transparent;
+    }
     
     @media (min-width: $screen-sm-min) {
       width: 20%;
-      
+      margin-bottom: -2px;
       &:first-child > a {
         border-left: 1px solid $link-border-color;
       }
@@ -115,19 +118,26 @@
     > a {
       margin-right: 0px;
       line-height: $line-height-base;
-      border-bottom: 1px solid $link-border-color;
-      border-left: none;
-      border-right: none;
-      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-top: 1px solid $navbar-default-border;
+      box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
       border-radius: 0;
-      &:hover {
-        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
-        border-top: 1px solid #444;
-      }
       
+      &:hover {
+        border: 1px solid transparent;
+        box-shadow: none;
+      } 
       @media (min-width: $screen-sm-min) {
        border-right: 1px solid $link-border-color;
-        
+       border-bottom: 1px solid $link-border-color;
+       &:hover {
+        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        border-top: 1px solid #444;
+        border-left: 1px solid transparent;
+
+      }
+       
       }
     }
 
@@ -138,12 +148,14 @@
       &:focus {
         color: $nav-tabs-active-link-hover-color;
         background-color: $nav-tabs-active-link-hover-bg;
-        border: 1px solid transparent;
-        border-top: 1px solid #444;
+        border: 1px solid $dark-background;
+        // border-top: 1px solid #444;
         cursor: default;
+        box-shadow: none;
           @media (min-width: $screen-sm-min) {
             border: 1px solid $nav-tabs-active-link-hover-border-color;
             border-top: none;
+            border-left: none;
             border-bottom: 2px solid $dark-background;
           }
       }

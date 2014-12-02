@@ -28,6 +28,8 @@ $navbar-default-link-active-bg:     $dark-background;
 $navbar-default-link-hover-bg:      $dark-background;
 $link-border-color:                 $white;
 $navbar-default-toggle-icon-bar-bg: $white;
+$navbar-default-border:             darken($navbar-default-bg, 6.5%) !default;
+
 
 $navbar-border-radius: 0px;
 $navbar-margin-bottom: 0px;
