@@ -1,5 +1,15 @@
 footer {
   background-color: $dark-background;
-  text-align: center;
   white-space: nowrap;
+
+  .email {
+    text-align: left;
+  }
+  .telephone {
+    text-align: center;
+  }
+  .copyright {
+    text-align: right;
+  }
+
 }
