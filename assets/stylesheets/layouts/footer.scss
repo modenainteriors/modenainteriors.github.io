@@ -1,15 +1,17 @@
 footer {
   background-color: $dark-background;
   white-space: nowrap;
+  text-align: center; 
 
-  .email {
-    text-align: left;
+  @media (min-width: $screen-sm-min) {
+    .email {
+      text-align: left;
+    }
+    .telephone {
+      text-align: center;
+    }
+    .copyright {
+      text-align: right;
+    }
   }
-  .telephone {
-    text-align: center;
-  }
-  .copyright {
-    text-align: right;
-  }
-
 }
