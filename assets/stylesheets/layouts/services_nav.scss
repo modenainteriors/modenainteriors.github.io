@@ -1,0 +1,27 @@
+#modena-services-nav {
+  background-color: $dark-background;
+  border: 0;
+
+  .nav {
+  
+    > li {
+
+      a {
+        background-color: $dark-background;
+        font-weight: bold;
+        padding: 20px 0px; 
+        float: left;
+        text-align: center;
+        font-size: 15px;
+      }
+    
+    } 
+
+    .active {
+      a {
+        color: $brand-primary
+      }
+    }
+
+  }
+}
