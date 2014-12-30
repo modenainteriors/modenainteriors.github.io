@@ -1,9 +1,11 @@
 // Site wide colour scheme
 $brand-primary:     #368c8c;
+$brand-lighter:     #8bb7b7; //lighten($brand-primary, 30%);
 $white: #ffffff;
 $milk-white: #FEFCFF;
 $dirty-white: #E5E4E2;
 $text-color-light:  $dirty-white;
+$text-color-dark: #1E1E1E;
 $dark-background:   #1E1E1E;
 $text-color: $text-color-light;
 $headings-color: $brand-primary;

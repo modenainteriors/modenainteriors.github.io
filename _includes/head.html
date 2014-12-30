@@ -12,4 +12,4 @@
   <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/bootstrap.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
 </head>
-<body>
+<body {% if page.category %}class="{{page.category}}"{% endif %}>

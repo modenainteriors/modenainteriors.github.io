@@ -1,0 +1,23 @@
+body.service {
+  main {
+    padding: 0;
+    background-color: $body-bg;
+    padding-bottom: 40px;
+  }
+  .main-header {
+    background-color: $brand-lighter;
+    color: $gray-dark;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h1, h2, h3, h4 {
+      color: $text-color;
+      font-weight: bold; 
+    }
+  }
+  article {
+    color: $text-color-dark;
+    padding-top: 20px;
+  }
+}
