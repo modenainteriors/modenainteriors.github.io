@@ -1,27 +1,124 @@
 #modena-services-nav {
   background-color: $dark-background;
   border: 0;
+  padding: 0;
 
-  .nav {
-  
-    > li {
+  .navbar-header {
+    text-align: center;
 
-      a {
-        background-color: $dark-background;
-        font-weight: bold;
-        padding: 20px 0px; 
-        float: left;
-        text-align: center;
-        font-size: 15px;
-      }
-    
-    } 
 
-    .active {
-      a {
-        color: $brand-primary
-      }
+    .navbar-toggle {
+      border: none;
+      line-height: 40px;
+      margin: 0;
+      text-align: center;
+      position: relative;
+      float: left;
+      border-radius: 0;
+      background-color: $dark-background;
+      width: 60px;
+      border-right: 1px solid darken($dark-background, 2%);
+      border-bottom: 1px solid darken($dark-background, 2%);
+      box-shadow: -1px 0px 0px rgba(255, 255, 255, 0.1) inset, 0px -1px 0px rgba(255, 255, 255, 0.1) inset;
+
+ //     &:hover,
+ //     &:focus {
+ //
+ //       background-color: lighten($dark-background, 2%);
+ //           
+ //     }
+
     }
 
+    .current-service {
+      float: left;
+      border-bottom: 1px solid darken($dark-background, 2%);
+      box-shadow: 0px -1px 0px rgba(150, 150, 150, 0.1) inset;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      line-height: 40px;
+      height: 100%;
+      padding: 9px 30px;
+      margin-left: -60px;
+      padding-left: 30px;
+
+      @media( min-width: $screen-sm-min ) {
+        display: none;
+      }
+
+    }
+    
+ }
+
+  .services-nav {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+
+
+    .nav {
+      float: none;
+      margin: 0px auto;
+      padding: 0px;
+      display: table;
+      table-layout: fixed;
+      border: none;
+      
+        > li {
+
+          @media( min-width: $screen-sm-min ) {
+            width: 33%;
+
+          }
+
+          @media( min-width: $screen-sm-min ) {
+              width: 16.5%;
+          }
+
+
+
+          a {
+            font-weight: bold;
+            // padding: 20px 0px; 
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            //border-bottom: 1px solid $dark-background;
+            //box-shadow: 0px 1px 0px rgba(60, 60, 60, 0.1) inset;
+            background-color: lighten($dark-background, 2%);
+
+
+            &:hover,
+            &:focus { 
+              color: $link-hover-color;
+            }
+
+            
+            @media (min-width: $screen-sm-min) {
+              padding: 20px 0px;
+              border: none;
+              box-shadow: none;
+              background-color: $dark-background;
+            }
+
+
+            
+          }
+        
+        } 
+
+        .active {
+          a {
+            color: $brand-primary
+          }
+        }
+
+      }
+    }
   }
-}
+
+  
