@@ -16,6 +16,10 @@ body.service {
       font-weight: bold; 
     }
   }
+  .service-banner {
+    width: 100%;
+    height: auto;
+  }
   article {
     color: $text-color-dark;
     padding-top: 20px;
