@@ -10,7 +10,9 @@
   <!-- Should I put html5 shiv? -->
   <!-- Add Jquery from Google CDN -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/modernizr.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/bootstrap.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/picturefill.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/main.js" async></script>
 </head>
 <body {% if page.category %}class="{{page.category}}"{% endif %}>
