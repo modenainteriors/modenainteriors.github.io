@@ -3,6 +3,11 @@ body.service {
     padding: 0;
     background-color: $body-bg;
     padding-bottom: 40px;
+    @media (min-width: $screen-sm-min) {
+      @include gradient-vertical(lighten($dirty-white, 2%), darken($dirty-white, 2%), 30%, 100%);
+    }
+
+
   }
   .main-header {
     background-color: $brand-lighter;
