@@ -1,3 +1,5 @@
+$services-list-item-border-color: #999999;
+
 main {
   background-color: $dark-background;
   padding-top: 20px;
@@ -40,7 +42,7 @@ main {
     }
   }
   a {
-    border: 1px solid black;
+    border: 1px solid $services-list-item-border-color;
     display: block;
     box-sizing: none;
     width: 100%;
