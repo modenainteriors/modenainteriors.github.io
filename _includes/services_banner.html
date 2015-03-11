@@ -1,1 +1,4 @@
-<img class="service-banner" src="{{ site.baseurl }}/assets/img/{{ page.title }} banner.jpg">
+<!--<img class="service-banner" src="{{ site.baseurl }}/assets/img/banners/{{ page.title | slugify }}.jpg">-->
+<div>
+  <img class="service-banner"  src="{{ site.baseurl }}/assets/img/banners/{{ page.title | slugify }}-large.jpg"
+srcset="{{ site.baseurl }}/assets/img/banners/{{ page.title | slugify }}-small.jpg 480w,{{ site.baseurl }}/assets/img/banners/{{ page.title | slugify }}-medium.jpg 768w,{{ site.baseurl }}/assets/img/banners/{{ page.title | slugify }}-large.jpg" >
