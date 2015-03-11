@@ -8,8 +8,6 @@ function setActivePageInNav() {
 
 	$("#modena-main-nav .nav a").each(function () {
 		var href = $(this).attr('href').split('/');
-		console.log(path);
-		console.log(href);
 		if(path[1] === href[1]) {
 			$(this).parent().addClass('active');
 		} 	
