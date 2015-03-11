@@ -106,7 +106,8 @@
               border: 1px solid $link-border-color;
               border-top: none;
               border-left: none;
-              border-bottom: 2px solid $dark-background;
+              border-bottom: 2px solid lighten($dark-background, 2%);
+              @include gradient-vertical(lighten($dark-background, 4%), lighten($dark-background, 2%), 50%, 100%);
             }
 
           }

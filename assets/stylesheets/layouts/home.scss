@@ -4,6 +4,10 @@ main {
   background-color: $dark-background;
   padding-top: 20px;
   padding-bottom: 20px;
+  @media (min-width: $screen-sm-min) {
+    @include gradient-vertical(lighten($dark-background, 2%), darken($dark-background, 2%), 30%, 100%);
+  }
+
 }
 
 .services-list {
