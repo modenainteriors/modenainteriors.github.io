@@ -1,5 +1,10 @@
 #modena-services-nav {
   background-color: $dark-background;
+  @media (min-width: $screen-sm-min) {
+    @include gradient-vertical(lighten($dark-background, 2%), darken($dark-background, 2%), 30%, 100%);
+  }
+
+
   border: 0;
   padding: 0;
 
@@ -89,7 +94,7 @@
             border: none;
             //border-bottom: 1px solid $dark-background;
             //box-shadow: 0px 1px 0px rgba(60, 60, 60, 0.1) inset;
-            background-color: lighten($dark-background, 2%);
+            background-color: $dark-background;
 
 
             &:hover,
@@ -102,7 +107,14 @@
               padding: 20px 0px;
               border: none;
               box-shadow: none;
-              background-color: $dark-background;
+              background-color: transparent;
+
+              &:hover,
+              &:focus { 
+                background-color: inherit;
+              }
+
+
             }
 
 
@@ -113,7 +125,15 @@
 
         .active {
           a {
-            color: $brand-primary
+            color: $brand-primary;
+            background-color: inherit;
+
+            &:hover,
+            &:focus { 
+              background-color: inherit;
+            }
+
+
           }
         }
 
