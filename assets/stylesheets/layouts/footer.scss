@@ -1,5 +1,9 @@
 footer {
   background-color: $dark-background;
+  @media (min-width: $screen-sm-min) {
+    @include gradient-vertical(darken($dark-background, 2%), lighten($dark-background, 2%), 30%, 100%);
+  }
+
   white-space: nowrap;
   text-align: center; 
 
