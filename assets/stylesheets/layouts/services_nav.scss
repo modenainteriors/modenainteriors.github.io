@@ -1,5 +1,6 @@
 #modena-services-nav {
   background-color: $dark-background;
+  @include box-shadow(0px 14px 12px 0px lighten($brand-lighter, 8%));
   @media (min-width: $screen-sm-min) {
     @include gradient-vertical(lighten($dark-background, 2%), darken($dark-background, 2%), 30%, 100%);
   }
